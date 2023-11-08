@@ -36,4 +36,23 @@ class RemoveElement {
         }
         return k;
     }
+
+    /**
+     * More concise solution.
+     * @param nums
+     * @param val
+     * @return
+     */
+    public int removeElement2(int[] nums, int val) {
+        int i = 0;
+        for (int j = 0; j < nums.length; j++) {
+            if (nums[j] != val) {
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+                i++;
+            }
+        }
+        return i;
+    }
 }
