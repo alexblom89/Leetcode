@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 public class RemoveDuplicates {
-    public int removeDuplicates(int[] nums) {
+    public static int removeDuplicates(int[] nums) {
         int k = (int)Arrays.stream(nums).distinct().count();
 
         //Last index.
@@ -31,6 +31,8 @@ public class RemoveDuplicates {
                 } 
             }
         }
+        //System.out.println(Integer.toString(k));
         return k;
     }
 }
+
