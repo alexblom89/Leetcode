@@ -1,4 +1,7 @@
 package Array.String;
+/**
+ * https://leetcode.com/problems/length-of-last-word/
+ */
 public class LengthOfLastWord {
     public int lengthOfLastWord(String s) {
         String[] strings = s.trim().split(" ");

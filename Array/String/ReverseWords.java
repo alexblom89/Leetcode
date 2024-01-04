@@ -1,6 +1,6 @@
 package Array.String;
 /**
- * https://leetcode.com/problems/reverse-words-in-a-string/?envType=study-plan-v2&envId=top-interview-150
+ * https://leetcode.com/problems/reverse-words-in-a-string/
  */
 public class ReverseWords {
     public static String reverseWords(String s) {

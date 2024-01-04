@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.Random;
 
 /**
- * https://leetcode.com/problems/insert-delete-getrandom-o1/?envType=study-plan-v2&envId=top-interview-150
+ * https://leetcode.com/problems/insert-delete-getrandom-o1/
  * 
  * This question specifies that each operation take O(1) time. However, just using Set operations in 
  * getRandom() function is not O(1), thus a second solution uses HashMap and ArrayList, where the element's index 

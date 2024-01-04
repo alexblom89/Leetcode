@@ -1,6 +1,6 @@
 package Array.String;
 /**
- * https://leetcode.com/problems/rotate-array/description/?envType=study-plan-v2&envId=top-interview-150
+ * https://leetcode.com/problems/rotate-array/
  */
 
 public class RotateArray {

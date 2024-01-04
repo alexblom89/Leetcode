@@ -1,6 +1,6 @@
 package Array.String;
 /**
- * https://leetcode.com/problems/remove-duplicates-from-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150
+ * https://leetcode.com/problems/remove-duplicates-from-sorted-array/
  */
 public class RemoveDupFromSortedArray {
     public int removeDuplicates(int[] nums) {
@@ -12,7 +12,7 @@ public class RemoveDupFromSortedArray {
     }
 
     /**
-     * https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/?envType=study-plan-v2&envId=top-interview-150
+     * https://leetcode.com/problems/remove-duplicates-from-sorted-array-ii/
      * Same as above but leave 2 of each char if more than 2 exist.
      * @param nums
      * @return

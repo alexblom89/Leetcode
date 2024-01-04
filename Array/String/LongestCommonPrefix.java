@@ -2,6 +2,8 @@ package Array.String;
 import java.util.*;
 
 /**
+ * https://leetcode.com/problems/longest-common-prefix/
+ * 
  * With the string array sorted alphabetically, the first and last
  * elements are most dissimilar of all strings in the array, and thus only
  * those two need to be compared. The longest common substring must exist between

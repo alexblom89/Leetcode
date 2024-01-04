@@ -1,6 +1,6 @@
 package TwoPointers;
 /**
- * https://leetcode.com/problems/is-subsequence/?envType=study-plan-v2&envId=top-interview-150
+ * https://leetcode.com/problems/is-subsequence/
  */
 public class IsSubsequence {
     public boolean isSubsequence(String s, String t) {

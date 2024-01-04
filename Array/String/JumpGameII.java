@@ -1,6 +1,6 @@
 package Array.String;
 /**
- * https://leetcode.com/problems/jump-game-ii/?envType=study-plan-v2&envId=top-interview-150
+ * https://leetcode.com/problems/jump-game-ii/
  */
 public class JumpGameII {
     public int jump(int[] nums) {

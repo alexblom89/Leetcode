@@ -1,6 +1,6 @@
 package Array.String;
 /**
- * https://leetcode.com/problems/gas-station/?envType=study-plan-v2&envId=top-interview-150
+ * https://leetcode.com/problems/gas-station/
  * 
  * Cost refers to amount of gas needed to reach the next station, not the cost of the gas.
  */

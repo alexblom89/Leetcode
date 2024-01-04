@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * https://leetcode.com/problems/majority-element/description/?envType=study-plan-v2&envId=top-interview-150
+ * https://leetcode.com/problems/majority-element/
  */
 
 public class MajorityElement {
