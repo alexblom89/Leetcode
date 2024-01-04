@@ -1,3 +1,4 @@
+package Array.String;
 public class LengthOfLastWord {
     public int lengthOfLastWord(String s) {
         String[] strings = s.trim().split(" ");
