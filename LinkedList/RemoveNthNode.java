@@ -15,12 +15,12 @@ package LinkedList;
 
 public class RemoveNthNode {
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        ListNode start = new ListNode();
-        start.next = head;
+        ListNode preHead = new ListNode();
+        preHead.next = head;
 
         //Two pointers.
         ListNode current = head;
-        ListNode previous = start;
+        ListNode previous = preHead;
         int size = 0;
 
         //Get list size.
@@ -33,7 +33,7 @@ public class RemoveNthNode {
         //Deal with edgecase, if size and n are the same, the answer is always position 1. 
         if (size == n)
         {
-            return start.next.next;
+            return preHead.next.next;
         }
 
         int removeIndex = size - n;
@@ -49,7 +49,7 @@ public class RemoveNthNode {
             }
         }
         
-        return start.next;
+        return preHead.next;
     }
 
     /**
