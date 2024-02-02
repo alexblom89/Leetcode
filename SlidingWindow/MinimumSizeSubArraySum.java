@@ -3,7 +3,7 @@ package SlidingWindow;
 /**
  * https://leetcode.com/problems/minimum-size-subarray-sum/
  * 
- * This solution currently seems to work, however I get TLE (time limit exceeded)
+ * Old solution seemed to work, however I got TLE (time limit exceeded)
  * error on one of the tests that contains many nums in the array and a large target.
  * 
  * New solution uses the sliding window technique. Using two pointers to indicate the 
