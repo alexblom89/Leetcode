@@ -6,37 +6,38 @@ package SlidingWindow;
  * This solution currently seems to work, however I get TLE (time limit exceeded)
  * error on one of the tests that contains many nums in the array and a large target.
  * 
+ * New solution uses the sliding window technique. Using two pointers to indicate the 
+ * start and end of a window (i and j), move j until the window is valid (>= target).
+ * Condense window by moving i (while checking that it is still valid), until it is no longer valid.
  */
 public class MinimumSizeSubArraySum {
     public int minSubArrayLen(int target, int[] nums) {
-        int sum;
-        int count;
+        int sum = 0;
+        int i = 0;
+        int j = 0;
         int minSize = Integer.MAX_VALUE;
 
-        for (int i = 0; i < nums.length; i++)
+        if (nums == null || nums.length == 0)
         {
-            int j = i + 1;
-            sum = nums[i];
-            count = 1;
+            return 0;
+        }
 
-            while (sum < target && j < nums.length)
+        while (j < nums.length)
+        {
+            //Sum keeps adding new window elements to expand window.
+            sum += nums[j++]; 
+
+            while (sum >= target)
             {
-                sum += nums[j];
-                count++;
-                j++;
-            }
-            
-            if (sum >= target)
-            {
-                minSize = Math.min(minSize, count);
-            }
-            
-            if (i == 0 && j == nums.length && sum < target)
-            {
-                return 0;
+                //Update minSize.
+                minSize = Math.min(minSize, j - i);
+
+                //Move start index and keep the window valid by subtracting the value
+                //no longer in the window from sum.
+                sum -= nums[i++];
             }
         }
 
-        return minSize;
+        return minSize == Integer.MAX_VALUE ? 0 : minSize;
     }
 }
