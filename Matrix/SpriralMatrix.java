@@ -5,6 +5,11 @@ import java.util.List;
 
 /**
  * https://leetcode.com/problems/spiral-matrix/
+ * 
+ * i and j points to the ith row and jth column, as with description picture 
+ * go right along the first row, then down the final column, left the last row,
+ * and up first column. Then increase the offset such that already recorded columns 
+ * and rows are not repeated.
  */
 public class SpriralMatrix {
     public static List<Integer> spiralOrder(int[][] matrix) {
@@ -26,7 +31,7 @@ public class SpriralMatrix {
                 j++;
                 count++;
             }
-        
+    
             i++;
             j--;
             
